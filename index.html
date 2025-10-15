@@ -17,6 +17,50 @@
                 <img src="png/me.png" alt="Мое фото">
             </main>
 
+
+
+
+            <form action="/search" metod="GET">
+                <lable for="q">Поиск:</lable>
+                <input id="q" name="q" type="text" placeholder="Что ищем?" />
+                <button type="submit">Найити</button>
+            </form>
+
+            <form>
+                <lable for="city">Город</lable>
+                <select id="city" name="city">
+                
+                    <option vaule="msk">Москва</option>
+                    <option vaule="spb">Питер</option>
+                    <option vaule="mnsk">Минск</option>
+
+                </select>
+                
+            </form>
+
+
+            <form class="auth" action="/singnup" methud="post">
+                <h3 class="auth__title">Регестрация</h3>
+
+                <lable class="auth__lable">Имя
+                    <input class="auth__input" name="name" type="text" placeholder="Ваше имя" required>
+                </lable>
+
+                <lable class="auth__lable">Email
+                    <input class="auth__input" name="email" type="email" placeholder="you@mail.com">
+                </lable>
+
+                <lable class="auth__lable">Пароль
+                    <input class="auth__lable" name="password" type="password" placeholder="••••••">
+                </lable>
+
+                <button class="auth__btn" type="sumbit">Создать</button>
+            </form>
+
+
+
+
+
             <div class="fade-in">Привет! Я появился красиво</div>
 
             <div class="box">Фокусы</div> 
@@ -46,6 +90,12 @@
             <button class="animation-button">Click</button>
 
             <a class="a-underline" href="#">Красивая ссылка</a>
+
+            <div class="grand">Мягкий градиентный фон</div>
+
+
+
+            
 
             
 
