@@ -23,7 +23,15 @@
             <form action="/search" metod="GET">
                 <lable for="q">Поиск:</lable>
                 <input id="q" name="q" type="text" placeholder="Что ищем?" />
-                <button type="submit">Найити</button>
+                <button type="submit">Найти</button>
+            </form>
+
+            <form class="form" action="/upload" method="POST" enctype="multipart/form-data">
+                <lable class="form__option">]
+                    <span class="form__option-text">Аватар</span>
+                    <input class="form__file" type="file" name="avatar" accept="image/*">
+                </lable>
+                <button class="form__button form__button--primary" type="symbit">Загрузить</button>
             </form>
 
             <form>
@@ -37,6 +45,17 @@
                 </select>
                 
             </form>
+
+
+
+
+            <form class="form" action="mailto:you@exemple.com" method="POST" enctype="text/plain">
+                <input class="form__input" type="text" name="name" placeholder="Имя">
+                <input class="form__input" type="email" name="email" placeholder="Email">
+                <button class="form__button" type="sumbit">Отправить на почту</button>
+            </form>
+
+
 
 
             <form class="auth" action="/singnup" methud="post">
@@ -55,8 +74,47 @@
                 </lable>
 
                 <button class="auth__btn" type="sumbit">Создать</button>
+                <button type="reset">Сбросить</button>
             </form>
 
+
+            <form action="/send" method="post">
+                <input type="text" name="name" placeholder="Имя" required>
+                <button type="sumbit">Отправит</button>
+                <button type="reset">Сбросить</button>
+            </form>
+
+
+
+            <form clas="form" action="/send" method="POST">
+
+                <button class="form_button form_button--primary" type="submit">
+                    <span class="form_button-icon" aria-hidden="true">🦘</span>
+                    <span class="form_button">Отправить</span>
+                </button>
+            </form>
+
+
+            <lable class="form_option">
+                <input class="form_checkbox" type="checkbox" id="agree" name="agree" vaule="yes">
+                <span class="form_option-text">Согласен с услвиями</span>
+            </lable>
+
+
+
+            <fieldset class="form_group">
+                <legend class="form_lablel">Пол</legend>
+
+                <label class="form_option">
+                    <input class="form_radio" type="radio" name="gender" vaule="male">
+                    <span class="form_option_text">Мужской</span>
+                </label>
+
+                <label class="form_option">
+                    <input class="form_radio" type="radio" name="gender" vaule="female">
+                    <span class="form_option_text">Женский</span>
+                </label>
+            </fieldset>
 
 
 
